@@ -1,0 +1,197 @@
+/*
+Make my job easy - fill in the details exactly where you see 'em between the --- ---! Leave things blank if necessary..
+
+<option
+data-author="---John Jack---"
+data-link="--- ---" 
+data-scheme="--- ---">
+---SpaceCat---
+</option>
+							
+							
+Thanks :)
+						
+*/
+
+
+/*
+and get styling!
+try to remember to put the class ".webdesigntuts-workshop" before every style declaration, that way I won't have to come back and do it :) 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+	font-size: 12px;
+	position: relative;
+	background-color: #114475;
+	overflow: hidden;
+
+	background-image:
+		-webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
+		-webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
+		-webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
+		-webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-image: 
+		-moz-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
+		-moz-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
+		-moz-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
+		-moz-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-image: 
+		-o-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
+		-o-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
+		-o-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
+		-o-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-image: 
+		-ms-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
+		-ms-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
+		-ms-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
+		-ms-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-image: 
+		radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
+		radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
+		radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
+		radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+
+	-webkit-background-size: 550px 550px, 350px 350px, 250px 250px, 1150px 150px;
+	-moz-background-size: 550px 550px, 350px 350px, 250px 250px, 1150px 150px;
+	background-size: 550px 550px, 350px 350px, 250px 250px, 1150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+
+	-webkit-animation: space 1s infinite linear;
+	-moz-animation: space 1s infinite linear;
+	-ms-animation: space 1s infinite linear;
+	-o-animation: space 1s infinite linear;
+	animation: space 1s infinite linear;
+}
+
+
+.webdesigntuts-workshop form {	
+	text-align:center;
+	position: relative;
+	/*compensate for info div */
+	/*margin-left: 20em;*/
+
+}
+
+.webdesigntuts-workshop button {
+	position: absolute;
+	right:-250%;
+	top:200px;
+	background: url('nyan.png') no-repeat ;
+	border:none;
+	color:transparent;
+	width:500px;
+	height:500px;
+	font-size:1px;
+
+	-webkit-transition: all 1.5s ease-out;
+	-moz-transition: all 1.5s ease-out;
+	-o-transition: all 1.5s ease-out;
+	-ms-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-animation: cat 1s infinite ease-in;
+	-moz-animation: cat 1s infinite ease-in;
+	-ms-animation: cat 1s infinite ease-in;
+	-o-animation: cat 1s infinite ease-in;
+	animation: cat 1s infinite ease-in;
+}
+
+.webdesigntuts-workshop input:focus ~ button {
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;	
+}
+
+.webdesigntuts-workshop button:before{
+	content:'';
+	width:611px;
+	height: 500px;
+	position: absolute;
+	left:-555px;
+	top:0px;
+	background: url('dash.png') no-repeat;
+	z-index:-1;
+}
+
+.webdesigntuts-workshop input {
+	margin-top:5px;
+	width: 520px;
+	font-size:20px;
+	line-height:30px;
+	padding-left:5px;
+	border:3px solid black;
+	box-shadow:0px 0px 0px 5px #ffcc99;
+	vertical-align:top;
+	font-family: 'Press Start 2P', cursive;
+	background: #c7c7c7;
+	color:black;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+.webdesigntuts-workshop input::-webkit-input-placeholder {color:black;}
+.webdesigntuts-workshop input:focus::-webkit-input-placeholder {color:gray;}
+.webdesigntuts-workshop input:-moz-placeholder {color:black;}
+
+
+@-moz-keyframes space {
+0%   {background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;}
+100% {background-position: -1100px 0, -310px 60px, -380px 270px, -1080px 100px;}
+}
+
+@-webkit-keyframes "space" {
+0%   {background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;}
+100% {background-position: -1100px 0, -310px 60px, -380px 270px, -1080px 100px;}
+}
+
+@-ms-keyframes "space" {
+0%   {background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;}
+100% {background-position: -1100px 0, -310px 60px, -380px 270px, -1080px 100px;}
+}
+
+@-o-keyframes "space" {
+0%   {background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;}
+100% {background-position: -1100px 0, -310px 60px, -380px 270px, -1080px 100px;}
+}
+
+@keyframes "space" {
+0%   {background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;}
+100% {background-position: -1100px 0, -310px 60px, -380px 270px, -1080px 100px;}
+}
+
+
+@-moz-keyframes cat {
+0%   {margin-top: 0px;}
+50%  {margin-top: -20px;}
+100% {margin-top: 0px;}
+}
+
+@-webkit-keyframes "cat" {
+0%   {margin-top: 0px;}
+50%  {margin-top: -20px;}
+100% {margin-top: 0px;}
+}
+
+@-ms-keyframes "cat" {
+0%   {margin-top: 0px;}
+50%  {margin-top: -20px;}
+100% {margin-top: 0px;}
+}
+
+@-o-keyframes "cat" {
+0%   {margin-top: 0px;}
+50%  {margin-top: -20px;}
+100% {margin-top: 0px;}
+}
+
+@keyframes "cat" {
+0%   {margin-top: 0px;}
+50%  {margin-top: -20px;}
+100% {margin-top: 0px;}
+}
+
+/*
+when you're done, zip it all up and send it over to me here: http://www.formstack.com/forms/envato-tuts_workshop
+*/
