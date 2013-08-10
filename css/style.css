@@ -138,6 +138,7 @@ ul {
 
 .works li {
   display: inline-block;
+  vertical-align: top;
   list-style: none;
   margin-bottom: 20px;
   -webkit-transition: all 0.3s;
