@@ -1,0 +1,48 @@
+{
+  "albums": [
+    {
+      "title": "Ladakhi",
+      "text": "Ladakhi khi khi khi",
+      "images": [
+        "img/albums/ladakhi/01.jpg",
+        "img/albums/ladakhi/02.jpg",
+        "img/albums/ladakhi/03.jpg",
+        "img/albums/ladakhi/04.jpg",
+        "img/albums/ladakhi/05.jpg"
+      ]
+    },
+    {
+      "title": "Mustang",
+      "text": "Not horses",
+      "images": [
+        "img/albums/mustang/01.jpg",
+        "img/albums/mustang/02.jpg",
+        "img/albums/mustang/03.jpg",
+        "img/albums/mustang/04.jpg",
+        "img/albums/mustang/05.jpg",
+        "img/albums/mustang/06.jpg"
+      ]
+    },
+    {
+      "title": "Karo",
+      "text": "karorororo",
+      "images": [
+        "img/albums/karo/01.jpg",
+        "img/albums/karo/02.jpg",
+        "img/albums/karo/03.jpg",
+        "img/albums/karo/04.jpg"
+      ]
+    },
+    {
+      "title": "Huli",
+      "text": "Huli Wig Men at Ambua Falls",
+      "images": [
+        "img/albums/hulu/01.jpg",
+        "img/albums/hulu/02.jpg",
+        "img/albums/hulu/03.jpg",
+        "img/albums/hulu/04.jpg"
+      ]
+    }
+
+  ]
+}
