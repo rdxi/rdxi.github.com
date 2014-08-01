@@ -49,7 +49,8 @@ button:focus {
 }
 
 .all-albums > div {
-  flex: 1 1 200px; /* grow, shrink, base width*/
+   /*flex: 1 1 200px;*/
+  flex: 1 1 100%;
   cursor: pointer;
   overflow: hidden;
   background-position: 600px 0;
@@ -61,14 +62,17 @@ button:focus {
   position: relative;
 }
 
-.all-albums > div:hover::after {
+.all-albums > div::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255,255,255,0.2);
   width: 100%;
   height: 100%;
+}
+
+.all-albums > div:hover::after {
+  background: rgba(255,255,255,0.2);
 }
 
 .all-albums .text-wrap {
@@ -193,19 +197,19 @@ button:focus {
   100% {box-shadow: inset 0 0 0 25px #fff, inset 0 0 0 25px #000;}
 }
 
-/*
-@media (min-device-pixel-ratio: 2) {
-.all-albums > div {
-  flex: 1 1 100%;
-}
-*/
+
 
 /*min-resolution: 2dppx*/
 /*min-resolution: 192dpi*/
 
-@media (min-resolution: 2dppx) {
+@media (min-width: 670px) and (max-resolution: 1dppx) {
   .all-albums > div {
-    flex: 1 1 400px; /* grow, shrink, base width*/
+    flex: 1 1 200px;
   }
-
 }
+
+/*@media (min-resolution: 2dppx) {
+  .all-albums > div {
+    flex: 1 1 400px;
+  }
+}*/
