@@ -6,7 +6,7 @@ var mainFunc = {
   init: function() {
     this.masonryInit();
     this.sidebarGoto();
-    this.filter();
+    // this.filter();
     this.sidebarCounter();
     this.about();
   },
