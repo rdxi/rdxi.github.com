@@ -1,2 +1,2 @@
-##My portfolio html
-See it online: [http://rdxi.github.io/](http://rdxi.github.io/)
+## My portfolio page
+[http://rdxi.github.io/](http://rdxi.github.io/)
