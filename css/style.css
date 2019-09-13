@@ -49,6 +49,10 @@ body {
   text-align: center;
 }
 
+.contact-me-bottom--prototypes-list {
+  font-size: 18px;
+}
+
 @media (max-width: 400px) {
   .welcome-text {
     font-size: 22px;
@@ -56,6 +60,10 @@ body {
 
   .contact-me-bottom {
     font-size: 22px;
+  }
+
+  .contact-me-bottom--prototypes-list {
+    font-size: 18px;
   }
 }
 
@@ -140,4 +148,9 @@ path#path4508-7 {
   0% { transform: translateX(0) translateY(1px); }
   50% { transform: translateX(3px) translateY(-1px); }
   100% { transform: translateX(0) translateY(1px); }
+}
+
+.prototypes-list .projects-item-link {
+  font-size: 24px;
+  font-weight: bold;
 }
